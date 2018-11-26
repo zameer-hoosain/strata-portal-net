@@ -1,0 +1,526 @@
+{
+	"info": {
+		"_postman_id": "ab4b05d4-f357-47e1-9c69-20446f22c829",
+		"name": "StrataPortalCalls",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "jsoncalls",
+			"item": [
+				{
+					"name": "lotrequest",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:63010/api/lotRequest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "63010",
+							"path": [
+								"api",
+								"lotRequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ownerrequest",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:63010/api/ownerRequest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "63010",
+							"path": [
+								"api",
+								"ownerRequest"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:63010/api/logon",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "63010",
+							"path": [
+								"api",
+								"logon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rptCurrentOwnerAccount",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:63010/api/reports/rptCurrentOwnerAccount",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "63010",
+							"path": [
+								"api",
+								"reports",
+								"rptCurrentOwnerAccount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getMeetingAgenda",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:63010/api/meetingAgenda",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "63010",
+							"path": [
+								"api",
+								"meetingAgenda"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getExecInfo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:63010/api/execInfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "63010",
+							"path": [
+								"api",
+								"execInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAgencyInfo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:63010/api/agencyInfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "63010",
+							"path": [
+								"api",
+								"agencyInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getBudgetInfo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:63010/api/budgetInfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "63010",
+							"path": [
+								"api",
+								"budgetInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "castVote",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:63010/api/castVote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "63010",
+							"path": [
+								"api",
+								"castVote"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Logon call",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/soap+xml",
+						"type": "text"
+					},
+					{
+						"key": "action",
+						"value": "\"http://tempuri.org/IRequestService/ProcessStrata\"",
+						"type": "text"
+					},
+					{
+						"key": "Host",
+						"value": "rmh-uat.rockendcommunicator.com.au",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem=\"http://tempuri.org/\" xmlns:roc=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\" xmlns:roc1=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.Common.ClientMessage\" xmlns:arr=\"http://schemas.microsoft.com/2003/10/Serialization/Arrays\">\r\n   <soap:Header xmlns:wsa=\"http://www.w3.org/2005/08/addressing\">\r\n      <wsa:Action>http://tempuri.org/IRequestService/Process</wsa:Action>\r\n   </soap:Header>\r\n   <soap:Body>\r\n      <tem:Process>\r\n         <!--Optional:-->\r\n         <tem:request>\r\n            <!--Optional:-->\r\n            <ActionName xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">SMH.LoginCheck</ActionName>\r\n            <!--Optional:-->\r\n            <ApplicationCode xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">SM</ApplicationCode>\r\n            <!--Optional:-->\r\n            <ApplicationKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">270656</ApplicationKey>\r\n            <!--Optional:-->\r\n            <BodyXml xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"><![CDATA[<?xml version=\"1.0\" encoding=\"utf-16\"?><LoginRequest xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" z:Id=\"1\" z:Type=\"Rockend.iStrata.StrataCommon.Request.LoginRequest\" z:Assembly=\"StrataCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d8368a3f546b36c2\" xmlns:z=\"http://schemas.microsoft.com/2003/10/Serialization/\" xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.iStrata.StrataCommon.Request\"><Password z:Id=\"2\">gemini</Password><Role>Owner</Role><UserName z:Id=\"3\">13000017</UserName></LoginRequest>]]></BodyXml>\r\n            <!--Optional:-->\r\n            <ServiceKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">2000000</ServiceKey>\r\n            <!--Optional:-->\r\n            <ServicePassword xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">r0ckend</ServicePassword>\r\n            <!--Optional:-->\r\n            <SessionID xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"/>\r\n         </tem:request>\r\n      </tem:Process>\r\n   </soap:Body>\r\n</soap:Envelope>"
+				},
+				"url": {
+					"raw": "{{communicatorEndpoint}}",
+					"host": [
+						"{{communicatorEndpoint}}"
+					]
+				},
+				"description": "Logs on and gets most of the user session information"
+			},
+			"response": []
+		},
+		{
+			"name": "OwnersRequest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "rmh-uat.rockendcommunicator.com.au",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Action",
+						"value": "\"http://tempuri.org/IRequestService/ProcessStrata\"",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/soap+xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem=\"http://tempuri.org/\" xmlns:roc=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\" xmlns:roc1=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.Common.ClientMessage\" xmlns:arr=\"http://schemas.microsoft.com/2003/10/Serialization/Arrays\">\r\n   <soap:Header xmlns:wsa=\"http://www.w3.org/2005/08/addressing\">\r\n      <wsa:Action>http://tempuri.org/IRequestService/Process</wsa:Action>\r\n   </soap:Header>\r\n   <soap:Body>\r\n      <tem:Process>\r\n         <!--Optional:-->\r\n         <tem:request>\r\n            <!--Optional:-->\r\n            <ActionName xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">OwnersRequest</ActionName>\r\n            <!--Optional:-->\r\n            <ApplicationCode xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">SM</ApplicationCode>\r\n            <!--Optional:-->\r\n            <ApplicationKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">270656</ApplicationKey>\r\n            <!--Optional:-->\r\n            <BodyXml xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"><![CDATA[<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<OwnerRequest xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" z:Id=\"1\" z:Type=\"Rockend.iStrata.StrataCommon.Request.OwnerRequest\" z:Assembly=\"StrataCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d8368a3f546b36c2\" \r\n    xmlns:z=\"http://schemas.microsoft.com/2003/10/Serialization/\" \r\n    xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.iStrata.StrataCommon.Request\">\r\n    <OwnersCorpID>1</OwnersCorpID>\r\n</OwnerRequest>]]></BodyXml>\r\n            <!--Optional:-->\r\n            <ServiceKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">2000000</ServiceKey>\r\n            <!--Optional:-->\r\n            <ServicePassword xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">r0ckend</ServicePassword>\r\n            <!--Optional:-->\r\n            <SessionID xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"/>\r\n         </tem:request>\r\n      </tem:Process>\r\n   </soap:Body>\r\n</soap:Envelope>"
+				},
+				"url": {
+					"raw": "{{communicatorEndpoint}}",
+					"host": [
+						"{{communicatorEndpoint}}"
+					]
+				},
+				"description": "Get owner's corporation information"
+			},
+			"response": []
+		},
+		{
+			"name": "LotRequest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "rmh-uat.rockendcommunicator.com.au",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Action",
+						"value": "\"http://tempuri.org/IRequestService/ProcessStrata\"",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/soap+xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem=\"http://tempuri.org/\" xmlns:roc=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\" xmlns:roc1=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.Common.ClientMessage\" xmlns:arr=\"http://schemas.microsoft.com/2003/10/Serialization/Arrays\">\r\n   <soap:Header xmlns:wsa=\"http://www.w3.org/2005/08/addressing\">\r\n      <wsa:Action>http://tempuri.org/IRequestService/Process</wsa:Action>\r\n   </soap:Header>\r\n   <soap:Body>\r\n      <tem:Process>\r\n         <!--Optional:-->\r\n         <tem:request>\r\n            <!--Optional:-->\r\n            <ActionName xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">LotRequest</ActionName>\r\n            <!--Optional:-->\r\n            <ApplicationCode xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">SM</ApplicationCode>\r\n            <!--Optional:-->\r\n            <ApplicationKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">270656</ApplicationKey>\r\n            <!--Optional:-->\r\n            <BodyXml xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"><![CDATA[<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<LotRequest xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" z:Id=\"1\" z:Type=\"Rockend.iStrata.StrataCommon.Request.LotRequest\" z:Assembly=\"StrataCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d8368a3f546b36c2\" \r\n    xmlns:z=\"http://schemas.microsoft.com/2003/10/Serialization/\" \r\n    xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.iStrata.StrataCommon.Request\">\r\n    <LotID>10</LotID>\r\n    <IsAgent>true</IsAgent>\r\n    <IsGeneral>true</IsGeneral>\r\n    <IsLevy>true</IsLevy>\r\n</LotRequest>]]></BodyXml>\r\n            <!--Optional:-->\r\n            <ServiceKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">2000000</ServiceKey>\r\n            <!--Optional:-->\r\n            <ServicePassword xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">r0ckend</ServicePassword>\r\n            <!--Optional:-->\r\n            <SessionID xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"/>\r\n         </tem:request>\r\n      </tem:Process>\r\n   </soap:Body>\r\n</soap:Envelope>"
+				},
+				"url": {
+					"raw": "{{communicatorEndpoint}}",
+					"host": [
+						"{{communicatorEndpoint}}"
+					]
+				},
+				"description": "Get owner's corporation information"
+			},
+			"response": []
+		},
+		{
+			"name": "Get meeting agenda",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"type": "text",
+						"value": "rmh-uat.rockendcommunicator.com.au",
+						"disabled": true
+					},
+					{
+						"key": "Action",
+						"type": "text",
+						"value": "\"http://tempuri.org/IRequestService/ProcessStrata\"",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/soap+xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem=\"http://tempuri.org/\" xmlns:roc=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\" xmlns:roc1=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.Common.ClientMessage\" xmlns:arr=\"http://schemas.microsoft.com/2003/10/Serialization/Arrays\">\r\n   <soap:Header xmlns:wsa=\"http://www.w3.org/2005/08/addressing\">\r\n      <wsa:Action>http://tempuri.org/IRequestService/Process</wsa:Action>\r\n   </soap:Header>\r\n   <soap:Body>\r\n      <tem:Process>\r\n         <!--Optional:-->\r\n         <tem:request>\r\n            <!--Optional:-->\r\n            <ActionName xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">GetMeetingAgenda</ActionName>\r\n            <!--Optional:-->\r\n            <ApplicationCode xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">SM</ApplicationCode>\r\n            <!--Optional:-->\r\n            <ApplicationKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">270656</ApplicationKey>\r\n            <!--Optional:-->\r\n            <BodyXml xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"><![CDATA[<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<MeetingAgendaRequest xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" z:Id=\"1\" z:Type=\"Rockend.iStrata.StrataCommon.Request.MeetingAgendaRequest\" z:Assembly=\"StrataCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d8368a3f546b36c2\" \r\n    xmlns:z=\"http://schemas.microsoft.com/2003/10/Serialization/\" \r\n    xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.iStrata.StrataCommon.Request\">\r\n    <LotID>10</LotID>\r\n    <MeetingRegisterId>319</MeetingRegisterId>\r\n</MeetingAgendaRequest>]]></BodyXml>\r\n            <!--Optional:-->\r\n            <ServiceKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">2000000</ServiceKey>\r\n            <!--Optional:-->\r\n            <ServicePassword xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">r0ckend</ServicePassword>\r\n            <!--Optional:-->\r\n            <SessionID xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"/>\r\n         </tem:request>\r\n      </tem:Process>\r\n   </soap:Body>\r\n</soap:Envelope>"
+				},
+				"url": {
+					"raw": "{{communicatorEndpoint}}",
+					"host": [
+						"{{communicatorEndpoint}}"
+					]
+				},
+				"description": "Get owner's corporation information"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Executive info",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"type": "text",
+						"value": "rmh-uat.rockendcommunicator.com.au",
+						"disabled": true
+					},
+					{
+						"key": "Action",
+						"type": "text",
+						"value": "\"http://tempuri.org/IRequestService/ProcessStrata\"",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/soap+xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem=\"http://tempuri.org/\" xmlns:roc=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\" xmlns:roc1=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.Common.ClientMessage\" xmlns:arr=\"http://schemas.microsoft.com/2003/10/Serialization/Arrays\">\r\n   <soap:Header xmlns:wsa=\"http://www.w3.org/2005/08/addressing\">\r\n      <wsa:Action>http://tempuri.org/IRequestService/Process</wsa:Action>\r\n   </soap:Header>\r\n   <soap:Body>\r\n      <tem:Process>\r\n         <!--Optional:-->\r\n         <tem:request>\r\n            <!--Optional:-->\r\n            <ActionName xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"></ActionName>\r\n            <!--Optional:-->\r\n            <ApplicationCode xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">SM</ApplicationCode>\r\n            <!--Optional:-->\r\n            <ApplicationKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">270656</ApplicationKey>\r\n            <!--Optional:-->\r\n            <BodyXml xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"><![CDATA[<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ExecutiveRequest xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" z:Id=\"1\" z:Type=\"Rockend.iStrata.StrataCommon.Request.ExecutiveRequest\" z:Assembly=\"StrataCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d8368a3f546b36c2\" \r\n    xmlns:z=\"http://schemas.microsoft.com/2003/10/Serialization/\" \r\n    xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.iStrata.StrataCommon.Request\">\r\n    <ExecID>5</ExecID>\r\n</ExecutiveRequest>]]></BodyXml>\r\n            <!--Optional:-->\r\n            <ServiceKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">2000000</ServiceKey>\r\n            <!--Optional:-->\r\n            <ServicePassword xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">r0ckend</ServicePassword>\r\n            <!--Optional:-->\r\n            <SessionID xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"/>\r\n         </tem:request>\r\n      </tem:Process>\r\n   </soap:Body>\r\n</soap:Envelope>"
+				},
+				"url": {
+					"raw": "{{communicatorEndpoint}}",
+					"host": [
+						"{{communicatorEndpoint}}"
+					]
+				},
+				"description": "Get owner's corporation information"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Agency Info",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"type": "text",
+						"value": "rmh-uat.rockendcommunicator.com.au",
+						"disabled": true
+					},
+					{
+						"key": "Action",
+						"type": "text",
+						"value": "\"http://tempuri.org/IRequestService/ProcessStrata\"",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/soap+xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem=\"http://tempuri.org/\" xmlns:roc=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\" xmlns:roc1=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.Common.ClientMessage\" xmlns:arr=\"http://schemas.microsoft.com/2003/10/Serialization/Arrays\">\r\n   <soap:Header xmlns:wsa=\"http://www.w3.org/2005/08/addressing\">\r\n      <wsa:Action>http://tempuri.org/IRequestService/Process</wsa:Action>\r\n   </soap:Header>\r\n   <soap:Body>\r\n      <tem:Process>\r\n         <!--Optional:-->\r\n         <tem:request>\r\n            <!--Optional:-->\r\n            <ActionName xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"></ActionName>\r\n            <!--Optional:-->\r\n            <ApplicationCode xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">SM</ApplicationCode>\r\n            <!--Optional:-->\r\n            <ApplicationKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">270656</ApplicationKey>\r\n            <!--Optional:-->\r\n            <BodyXml xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"><![CDATA[<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<AgencyRequest xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" z:Id=\"1\" z:Type=\"Rockend.iStrata.StrataCommon.Request.AgencyRequest\" z:Assembly=\"StrataCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d8368a3f546b36c2\" \r\n    xmlns:z=\"http://schemas.microsoft.com/2003/10/Serialization/\" \r\n    xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.iStrata.StrataCommon.Request\">\r\n    <ApplicationKey>270656</ApplicationKey>\r\n</AgencyRequest>]]></BodyXml>\r\n            <!--Optional:-->\r\n            <ServiceKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">2000000</ServiceKey>\r\n            <!--Optional:-->\r\n            <ServicePassword xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">r0ckend</ServicePassword>\r\n            <!--Optional:-->\r\n            <SessionID xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"/>\r\n         </tem:request>\r\n      </tem:Process>\r\n   </soap:Body>\r\n</soap:Envelope>"
+				},
+				"url": {
+					"raw": "{{communicatorEndpoint}}",
+					"host": [
+						"{{communicatorEndpoint}}"
+					]
+				},
+				"description": "Get owner's corporation information"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Budget Info",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"type": "text",
+						"value": "rmh-uat.rockendcommunicator.com.au",
+						"disabled": true
+					},
+					{
+						"key": "Action",
+						"type": "text",
+						"value": "\"http://tempuri.org/IRequestService/ProcessStrata\"",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/soap+xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem=\"http://tempuri.org/\" xmlns:roc=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\" xmlns:roc1=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.Common.ClientMessage\" xmlns:arr=\"http://schemas.microsoft.com/2003/10/Serialization/Arrays\">\r\n   <soap:Header xmlns:wsa=\"http://www.w3.org/2005/08/addressing\">\r\n      <wsa:Action>http://tempuri.org/IRequestService/Process</wsa:Action>\r\n   </soap:Header>\r\n   <soap:Body>\r\n      <tem:Process>\r\n         <!--Optional:-->\r\n         <tem:request>\r\n            <!--Optional:-->\r\n            <ActionName xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"></ActionName>\r\n            <!--Optional:-->\r\n            <ApplicationCode xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">SM</ApplicationCode>\r\n            <!--Optional:-->\r\n            <ApplicationKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">270656</ApplicationKey>\r\n            <!--Optional:-->\r\n            <BodyXml xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"><![CDATA[<?xml version=\"1.0\" encoding=\"utf-16\"?><BudgetReportRequest xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" z:Id=\"1\" z:Type=\"Rockend.iStrata.StrataCommon.Request.BudgetReportRequest\" z:Assembly=\"StrataCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d8368a3f546b36c2\" xmlns:z=\"http://schemas.microsoft.com/2003/10/Serialization/\" xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.iStrata.StrataCommon.Request\"><OwnerCorpOIDList xmlns:d2p1=\"http://schemas.microsoft.com/2003/10/Serialization/Arrays\" z:Id=\"2\"><d2p1:_items z:Id=\"3\" z:Size=\"4\"><d2p1:int>1</d2p1:int><d2p1:int>0</d2p1:int><d2p1:int>0</d2p1:int><d2p1:int>0</d2p1:int></d2p1:_items><d2p1:_size>1</d2p1:_size><d2p1:_version>1</d2p1:_version></OwnerCorpOIDList></BudgetReportRequest>]]></BodyXml>\r\n            <!--Optional:-->\r\n            <ServiceKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">2000000</ServiceKey>\r\n            <!--Optional:-->\r\n            <ServicePassword xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">r0ckend</ServicePassword>\r\n            <!--Optional:-->\r\n            <SessionID xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"/>\r\n         </tem:request>\r\n      </tem:Process>\r\n   </soap:Body>\r\n</soap:Envelope>"
+				},
+				"url": {
+					"raw": "{{communicatorEndpoint}}",
+					"host": [
+						"{{communicatorEndpoint}}"
+					]
+				},
+				"description": "Get owner's corporation information"
+			},
+			"response": []
+		},
+		{
+			"name": "Report: current owner",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"type": "text",
+						"value": "rmh-uat.rockendcommunicator.com.au",
+						"disabled": true
+					},
+					{
+						"key": "Action",
+						"type": "text",
+						"value": "\"http://tempuri.org/IRequestService/ProcessStrata\"",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/soap+xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soap:Envelope xmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:tem=\"http://tempuri.org/\" xmlns:roc=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\" xmlns:roc1=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.Common.ClientMessage\" xmlns:arr=\"http://schemas.microsoft.com/2003/10/Serialization/Arrays\">\r\n   <soap:Header xmlns:wsa=\"http://www.w3.org/2005/08/addressing\">\r\n      <wsa:Action>http://tempuri.org/IRequestService/Process</wsa:Action>\r\n   </soap:Header>\r\n   <soap:Body>\r\n      <tem:Process>\r\n         <!--Optional:-->\r\n         <tem:request>\r\n            <!--Optional:-->\r\n            <ActionName xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"></ActionName>\r\n            <!--Optional:-->\r\n            <ApplicationCode xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">SM</ApplicationCode>\r\n            <!--Optional:-->\r\n            <ApplicationKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">270656</ApplicationKey>\r\n            <!--Optional:-->\r\n            <BodyXml xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"><![CDATA[<?xml version=\"1.0\" encoding=\"utf-16\"?><ReportRequest xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" z:Id=\"1\" z:Type=\"Rockend.iStrata.StrataCommon.Request.ReportRequest\" z:Assembly=\"StrataCommon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d8368a3f546b36c2\" xmlns:z=\"http://schemas.microsoft.com/2003/10/Serialization/\" xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.iStrata.StrataCommon.Request\"><DataText i:nil=\"true\" /><ErrorText i:nil=\"true\" /><ErrorsOccured z:Id=\"2\">N</ErrorsOccured><MainCommand z:Id=\"3\">rptCurrentOwnerAccount</MainCommand><PDFFullFilename i:nil=\"true\" /><Parameter0 z:Id=\"4\">10</Parameter0><Parameter1 z:Id=\"5\">1</Parameter1><Parameter2 i:nil=\"true\" /><Parameter3 i:nil=\"true\" /><Parameter4 i:nil=\"true\" /><Parameter5 i:nil=\"true\" /><Parameter6 i:nil=\"true\" /><Parameter7 i:nil=\"true\" /><Parameter8 i:nil=\"true\" /><Parameter9 i:nil=\"true\" /><ProgressCounter>0</ProgressCounter><StrataLaunchConfirmed z:Ref=\"2\" i:nil=\"true\" /><TaskIsFinished z:Ref=\"2\" i:nil=\"true\" /><TimeStamp>0001-01-01T00:00:00</TimeStamp><Username i:nil=\"true\" /><WebAccessRequestID>0</WebAccessRequestID></ReportRequest>]]></BodyXml>\r\n            <!--Optional:-->\r\n            <ServiceKey xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">2000000</ServiceKey>\r\n            <!--Optional:-->\r\n            <ServicePassword xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\">r0ckend</ServicePassword>\r\n            <!--Optional:-->\r\n            <SessionID xmlns=\"http://schemas.datacontract.org/2004/07/Rockend.WebAccess.RockendMessage\"/>\r\n         </tem:request>\r\n      </tem:Process>\r\n   </soap:Body>\r\n</soap:Envelope>"
+				},
+				"url": {
+					"raw": "{{communicatorEndpoint}}",
+					"host": [
+						"{{communicatorEndpoint}}"
+					]
+				},
+				"description": "Get owner's corporation information"
+			},
+			"response": []
+		}
+	]
+}
